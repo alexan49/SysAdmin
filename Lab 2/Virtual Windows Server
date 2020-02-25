@@ -1,0 +1,51 @@
+Lab 2
+Virtual Windows Server
+2/04/2020
+Alexandra Gonzalez
+Shay
+Objectives:
+Our objective was to create a virtual environment on a server and then create a virtual machine running windows server using a disk. 
+Equipment List:
+Dell server
+DVD for installing ProxMox VE
+Brower to connect to the virtual environment
+ISO file of Window server to install VM
+Remote desktop to access WinServer 2016
+Notes and Observations:
+	Day 1: 2/04/2020
+We went to install ProxMox installer and one of our hardware did not turn on. 
+ProxMox	Hostname	Hyper 4 Info
+Pw: cmst;315	hyper4.labs.salina.edu	IP Address: 10.136.212.45
+Email: alexan49@ksu.edu
+	Netmask: 255.255.252.0
+Username: root		Gateway: 10.136.212.1
+		DNS Server: 10.133.253.130
+Virtualization platform started creating partition. Full virtualization (KVM) started running unmodified virtual servers by Linux or windows. Could not be installed we had to reboot twice. 
+	Day 2: 2/06/2020
+Turned on Dell rack and got rid of foreign configuration. Raid level was zero. We initialized under virtual disk management.
+https://10.136.212.45:8006
+We typed that into our browser to make sure our dell disk we connected was working and it worked. 
+	Day 3: 2/10/2020
+We turned on computer and immediately went on WinSCP and moved windows into our IP Address template that will be creating a virtual machine. 
+General	OS	H-Disk	Sockets	Memory
+Node: hyper4	Local	Disk size: 40 GB	Cores: 4	8,192
+VM ID: 100	Windows			
+Name: WinServer4				
+On the chart above is what we changed from our CPU settings. From there we clicked start went to console and no VNC and from there it started running. We custom installed our own windows and finished programming. 
+IP Address: 10.136.212.54
+Netmask: 255.255.252.0
+Gateway: 10.136.212.1
+10.133.252.130
+10.133.252.131
+References: No references. 
+Questions:
+3.	10.136.212.54
+4.	255.255.252.0
+5.	10.133.252.131
+6.	10.136.212.45 to 10.136.212.54
+7.	The Default Gateway is an internet protocol that serves as a host to other networks when there are no IP Addresses.
+8.	There would be no WIFI connected to my server so no connection to the Ethernet at all. 
+Conclusion and Reflection:
+It was a nice lab really cool to find out how to create a virtual machine from the start from having nothing to having your own virtual machine which is how Windows got started. 
+
+

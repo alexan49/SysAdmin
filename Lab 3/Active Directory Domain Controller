@@ -1,0 +1,35 @@
+Lab 3
+Active Directory Domain Controller
+2/12/2020
+Alexandra Gonzalez
+Shay
+
+Objectives:
+Building our own domain with its own server with organizational units, users, and client computers. 
+Equipment List:
+Dell Computer
+Notes and Observations:
+Day 1: 2/12/2020
+We went on Remote Desktop and put the IP Address: 10.136.212.45 put other account. 
+Username: administrator
+Pw: cmst;315
+We went to Add role clicked on manage from one computer, went to active directory domain services to add features, went to install to add more than once server, and installation was successful on creating WinServer4. From there we went to domain controller to add new forest and typed in the domain name: Domain4.local. From there we went to C:\Windows\NTDS and began installing domain server. 
+Day 2: 2/14/2020
+We started to create OU users and add client computer and make it a virtual machine and started creating a VM to windows 10. We went to Network setting, to tools, clicked on active directory users and computers, right clicked on domain to create a new folder, and right clicked on folder you created and went to add user. 
+User: alexan49
+Pw: cmst;315
+Shay was also added to the folder. 
+WinSCP
+Login: 10.136.212.45
+Username: root
+Pw: cmst;315
+From there we went to Desktop Setting, to var, lib, vz, template, iso, and dragged over windows10. Went to Hyper4 to create VM and clicked on the name Win4Client and changed CPU to 4 cores and Memory to 8,192. From there we checked mark start after created and confirm. We clicked on Win4Client, went go to console, Install, Windows10Pro, and I accept. There was an error with out Win4Client and made a new console named Win4ClientA.
+Day 3: 2/17/2020
+Today we started off by going to console again to leave where we left off. We ran and successfully have a client server. Turned on remote desktop in remote desktop settings to be set up to be a part of our domain. We went to network settings, clicked on ethernet, adapter, properties, clicked on the IP version 4, and set our DNS to 10.136.212.54. From there we went to system settings, clicked on computer name, put Win4ClientA, put Domain4. We changed the IP Address on client to 10.136.212.54 from there we went to system settings, computer name, clicked on Win4ClientA to add it to the name, and clicked on Domain 4 to put the domain. From there it gave us the clients IP Address which was 10.136.215.181 giving us the subnet mask 255.255.252.0. We went to remote desktop login to login into our client. For login we used Domain4/administrator since that is our client remote desktop username. Went to add organizational unit, added a new folder, and clicked on add OU. Went to new group, clicked on remote members, and added our names onto the folder. From there we went to console, signed in, clicked on local users, remote desktop, added remote into console. Finally went to remote desktop again and logged into onto our own login into the server and logged onto it successfully. 
+Questions:
+1.	We changed one because in a computer when we get plugged into our network for the first time it shows and IP conflict until we assign a new IP address. 
+2.  The extra step we did was going into console was adding the Group named remote and adding members which was our client names into that console. We did that so we can have access into the Group and making it easier for groups to go into that console group. 
+3.  Advantages Active Directory does is provide mechanisms for centralized policy for management providing improved workstation security and to be easier managed. Can also provide central storage to be based on individuals or a single department. 
+4. Couple reasons are increase privacy and efficiency, increase business management, and make desktop more virtualization. 
+Conclusion and Reflection:
+This lab showed me the ins and outs to adding an active directory if one day I want to add this to a small business and manage the business and just add the managers really easily. 

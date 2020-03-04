@@ -1,0 +1,34 @@
+Lab 4: Managing Group & Permissions
+03/03/2020
+Alexandra Gonzalez
+Lab Partner: Shea
+
+Objectives:
+Using active directory groups to manage permissions to resources or users. 
+Equipment List:
+Computer and mouse
+Notes & Observations:
+Before we got into the actual lab a day before we went over the lab overview and what we will be having to do. 
+Day 02/23/2020:
+We logged into our administrator and went to file folder to resources. Under properties we went to security, added remote and clicked on sharing, went to advanced sharing, and permissions. 
+From there we clicked on share permissions since it will not override NTFS if you click on read only. From here we went to remove everyone, clicked on full control and added our domain users. 
+We went to security tab and clicked on remote to read and execute. From here I logged into our remote access using our Windows10 local username. 
+Went to file explorer into network and typed in the URL \\winserver4 going into test into test only. From here we went into activate windows and changed the product key. 
+Day 02/272020
+We were given the IP Address for the printer which we will be having to use later. 
+Then we logged into our administrator went to sever manager and local server was already brought up. 
+We went to active directory users and computers and added an OU called Main. 
+Added OU’s within the Main OU called Marketing, HR, Accounting, and IT. First, we moved our client user from second OU folder into the IT folder doing the same for my lab partners account as well for mine. 
+Went to users, clicked on domain admin, and added our own client names to become admins. Next, we added Global Groups in Marketing folder and did so for the rest of each OU folder Marketing GG, HR GG, Accounting GG, IT GG. 
+Then we added the Domain Local Groups to each of our OU’s inside the Main. 
+ 
+Added on each OU just like how the diagram is showing. 
+From here we created a folder on each desktop called Data and created folders inside each folder calling each their own OU Data for example, Marketing Data, HR Data, Accounting Data, IT Data. 
+We went into Accounting folder into properties, security, and added our OU Data into each sub-folder.
+We checked effective access for each OU user and logged into our Win10client. 
+Under hyper4 clicked on win4clientA to console and logged in. In search we typed in users and groups and went into groups, remote desktop, and added domain users to make sure our users checked out. 
+Checked into each client user to access servers shared folder and shared a folder into administrator folder to make sure every user can reach that folder. 
+We shared data folder and added domain users giving them full control. To install to print we went to this link: https://www.tactig.com/installconfigureprintserviceswindowsserver/ 
+Followed the instructions to add a printer into our servers. 
+Conclusion & Reflection:
+Thought it was a nice overview he gave us on how to begin with the actual lab for the next class period it really helped me out on figuring out what we are doing actually means. 
